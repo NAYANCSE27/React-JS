@@ -2,10 +2,14 @@ import Input from './input/Input';
 import './App.css';
 
 function App() {
-  const numbers = [1, 2, 3, 4, 5];
+  const posts = [
+    {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+    {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+  ];
+
   return (
     <div className="App">
-      <Input numbers = {numbers}/>
+      <Input posts = {posts}/>
     </div>
   );
 }
